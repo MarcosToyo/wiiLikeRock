@@ -18,27 +18,60 @@
     <header>
         <div class="container">
             <h2 class="logo">💀wiiLikeRock🤘</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Series</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav>
+            <div class="botoes">
+                <button role="button" class="botao" onclick="chamaCaixaA()">
+                    ⚡ Yeah!!!
+                </button>
+                <button id="chama-trailer" role="button" class="botao" onclick="location.href='https://www.youtube.com/watch?v=aCtwnGyEGOU';" value="Go to Youtube">
+                    🔥 See trailer
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <div class="jogo-principal">
             <div class="container">
-                <h3 class="titulo">Guitar Hero III: Legends of Rock</h3>
-                <p class="descricao">Guitar Hero III: Legends of Rock drops you into the spotlight of the largest and most legendary rock concert ever.</p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        ⚡ Yeah!!!
-                    </button>
-                    <button role="button" class="botao">
-                        🔥 Rock'n Roll
-                    </button>
+                <div class="info-adicional">
+                    <h3 id="nome-jogo" class="titulo">Guitar Hero III: Legends of Rock</h3>
+                    <p id="descript-jogo" class="nova-descricao">Guitar Hero III: Legends of Rock drops you into the spotlight of the largest and most legendary rock concert ever.
+                        The star-studded soundtrack includes master tracks by such legendary artists as Guns N' Roses, The Rolling Stones, Beastie Boys, Muse and Pearl Jam,
+                         with added songs as made legendary by Kiss, Alice Cooper and Heart. Now drop that air guitar, tune your exclusive new Les Paul Guitar
+                          Controller and shred the night away with Guitar Hero III: Legends of Rock.</p>
                 </div>
+
+                <div class="song-list">
+                    
+                    <img id="loading-image" src="./img/heroTres_disc.png" alt="Loading..." />
+                    
+                    <div id="container-desliza">
+                        <div id="desliza-texto">
+                            Gig location and songs<br><br>
+
+                            @Backyard Bash<br>
+                            "Slow Ride" - Foghat<br>
+                            "Talk Dirty to Me" - Poison<br>
+                            "Hit Me With Your Best Shot" - Pat Benatar<br>
+                            "Story of My Life" - Social Distortion<br>
+                            "Rock and Roll All Nite" - Kiss<br><br>
+                            
+                            @Mitch's Moose Lounge<br>
+                            "Mississippi Queen" - Mountain<br>
+                            "School's Out" - Alice Cooper<br>
+                            "Sunshine of Your Love" - Cream<br>
+                            "Guitar Battle vs. Tom Morello" - Tom Morello<br>
+                            "Bulls on Parade" - Rage Against the Machine<br><br>
+                            
+                            @Video Shoot<br>
+                            "When You Were Young" - The Killers<br>
+                            "Miss Murder" - AFI<br>
+                            "The Seeker" - The Who<br>
+                            "Lay Down" - Priestess<br>
+                            "Paint It Black" - The Rolling Stones<br><br>
+                        <div>
+                      </div>
+
+                </div>
+
             </div>
         </div>
     </main>
@@ -46,28 +79,28 @@
     <div class="carrossel-jogos">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/7/1/3/83713_front.jpg">
+                <img id="heroTres" class="box-jogo" src="./img/heroTres_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/1/8/1/93181_front.jpg">
+                <img id="heroQuatro" class="box-jogo" src="./img/heroQuatro_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/4/0/5/112405_front.jpg">
+                <img id="heroCinco" class="box-jogo" src="./img/heroCinco_front.jpg">
+            </div>
+            <div  class="item">
+                <img id="heroSeis" class="box-jogo" src="./img/heroSeis_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/7/0/9/146709_front.jpg">
+                <img id="heroHits" class="box-jogo" src="./img/heroHits_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/5/8/1/109581_front.jpg">
+                <img id="heroAero" class="box-jogo" src="./img/heroAero_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/5/5/5/94555_front.jpg">
+                <img id="heroMetalli" class="box-jogo" src="./img/heroMetalli_front.jpg">
             </div>
             <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/6/1/5/97615_front.jpg">
-            </div>
-            <div class="item">
-                <img class="box-jogo" src="https://gamefaqs.gamespot.com/a/box/3/8/1/112381_front.jpg">
+                <img id="heroHalen" class="box-jogo" src="./img/heroHalen_front.jpg">
             </div>
          
             
@@ -77,14 +110,24 @@
     </div>
     <footer>
         <div class="container">
-            blabla
+                        
+            "GUITAR HERO" and the songs are trademarks of their respective owners<br><br>
 
+            Game cover images and game descriptions came from: <a href="https://gamefaqs.gamespot.com/"> gamefaqs.gamespot.com</a><br>
+            Game discs images came from: <a href="https://www.gametdb.com/">gametdb.com</a><br><br>
+
+            This is just a fan demo page made with ❤️‍🔥 to show something that "resembles" netflix 🤣<br>
+            
+            Thanks for the people at <a href="https://web.dio.me/home">Digital Innovation One</a><br>
+
+            Greetings from 🇧🇷
         </div>
     </footer>
 
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/main.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

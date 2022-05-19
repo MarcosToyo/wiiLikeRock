@@ -24,6 +24,7 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 header .logo{
@@ -48,30 +49,28 @@ header nav a:hover{
 
 .jogo-principal{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('https://gamefaqs.gamespot.com/a/box/7/1/4/83714_front.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('https://gamefaqs.gamespot.com/a/screen/full/5/5/2/440552.jpg');
 
-    height:450px;
+    height:400px;
+    
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
 }
 
-.jogo-principal .descricao{
+.jogo-principal .nova-descricao{
     margin-top: 10px;
-    margin-bottom: 50px;
 }
 
 .jogo-principal .titulo{
-    margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS';
+    margin-top: 15px;
+    text-align: center;
+
 }
+
+
 
 .botao{
     background-color: rgba(0,0,0,.50);
@@ -96,15 +95,83 @@ header nav a:hover{
 }
 
 .jogo-principal .container{
-    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ 
+
 }
+
+.jogo-principal .song-list{
+    width: 35%;
+
+    text-align: center;
+    height: 400px;
+
+}
+.jogo-principal .info-adicional{
+    width: 35%;
+
+    text-align: justify;
+    height: 400px;
+}
+
 
 .box-jogo{
     height: 100%;
     width: 100%;
     display: block;
+    cursor: pointer;
 }
+
+
 
 .carrossel-jogos{
     margin-top: 5px;
 }
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #loading-image {
+      width: 180px;
+      height: 180px;
+      animation: spin 5s infinite linear;
+      z-index: 100;
+      margin-top: 15px;
+      
+  }
+
+  #container-desliza {
+    height: 180px;
+    overflow: hidden;
+
+  }
+  
+  #desliza-texto {
+    height: 400px;
+    text-align: center;
+  
+    transform: translateY(100%);
+    animation: desliza-anima 10s linear infinite;
+  }
+  
+  
+  
+  @keyframes desliza-anima {
+    from {
+      transform: translateY(50%);
+    }
+    
+    to {
+      transform: translateY(-100%);
+    }
+  }
